@@ -1,7 +1,4 @@
-<div align="center">
-  <img src="images/hyperspectral_images3.png" alt="Into Picture" width="900"/>
-</div>
-
+![Hyperspectral AI Banner](images/hyperspectral_images3.png)
 
 # Deep Neural Networks for Hyperspectral Crop Disease Detection
 
@@ -79,6 +76,9 @@ The model was evaluated on a blind test dataset, achieving a private MSE score o
 The best-performing model achieved an MSE of ``816.83`` on the private leaderboard, which would have placed it **second overall in the competition**.
 
 
+## References
+
+Xin Zhang, Liangxiu Han, Wenjiang Huang, Yingying Dong, Yue Shi, Tam Sobieh. Beyond Visible Spectrum: AI for Agriculture 2025. https://kaggle.com/competitions/beyond-visible-spectrum-ai-for-agriculture-2025, 2025. Kaggle.
 
 
 
