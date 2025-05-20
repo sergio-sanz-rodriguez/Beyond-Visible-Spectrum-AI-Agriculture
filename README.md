@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/hyperspectral_images3.png" alt="Into Picture" width="700"/>
+  <img src="images/hyperspectral_images3.png" alt="Into Picture" width="900"/>
 </div>
 
 
