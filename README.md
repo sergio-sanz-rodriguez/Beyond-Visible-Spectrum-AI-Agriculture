@@ -57,12 +57,18 @@ The final ViT configuration is as follows:
 
 This setup results in a total of 4.2 million parameters.
 
-The model was trained and cross-validating using the PyTorch library and the [TorchSuite training engine](https://github.com/sergio-sanz-rodriguez/torchsuite/blob/main/engines/regression.py) with the following configuration:
+The model was trained and cross-validatED using the PyTorch library and the [TorchSuite training engine](https://github.com/sergio-sanz-rodriguez/torchsuite/blob/main/engines/regression.py); with the following configuration:
 
-* Learning rate: 1e-6 (training), 1e-7 (fine-tuning 1), 5e-6 (fine-tuning 2)
-* Number of epochs: 310 (training), 150 (fine-tuning 1), 630 (fine-tuning 2)
+* Learning rate:
+   * 1e-6 (initial training)
+   * 1e-7 (first fine-tuning phase)
+   * 5e-6 (second fine-tuning phase)
+* Number of epochs:
+   * 310 (initial training)
+   * 150 (first fine-tuning phase)
+   * 630 (second fine-tuning phase)
 * Batch size: 32
-* Optimizer: AdamW, weight decay: 0.01, betas: 0.9, 0.999.
+* Optimizer: AdamW (weight decay: 0.01, betas: 0.9, 0.999)
 * Scheduler: CosineAnnealingLR with restarts
 
 
