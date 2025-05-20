@@ -12,7 +12,7 @@ One of the main challenges is the limited size of the training dataset, which ma
 The result produced by the proposed pipeline was submitted to the Kaggle competition titled [Beyond Visible Spectrum: AI for Agriculture 2025 challenge](https://www.kaggle.com/competitions/beyond-visible-spectrum-ai-for-agriculture-2025/leaderboard?).
 
 <div align="center">
-  <img src="images/kaggle-logo-transparent-300.png" alt="Kaggle Logo" width="350"/>
+  <img src="images/kaggle-logo-transparent-300.png" alt="Kaggle Logo" width="550"/>
 </div>
 
 The pipeline mainly consists of two stages: data augmentation and disease prediction with ViT.
