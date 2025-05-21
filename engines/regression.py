@@ -646,7 +646,7 @@ class RegressionEngine(Common):
                 with autocast(device_type='cuda', dtype=torch.float16):
                     # Forward pass
                     y_pred = self.get_predictions(self.model(X))
-                    #y_pred = y_pred.clamp(1, 100)
+                    y_pred = y_pred.clamp(0, 1)
                     
                     # Check if the output has NaN or Inf values
                     if torch.isnan(y_pred).any() or torch.isinf(y_pred).any():
@@ -681,7 +681,7 @@ class RegressionEngine(Common):
             else:
                 # Forward pass
                 y_pred = self.get_predictions(self.model(X))
-                #y_pred = y_pred.clamp(1, 100)
+                y_pred = y_pred.clamp(0, 1)
                 
                 # Calculate loss, normalize by accumulation steps
                 loss = self.loss_fn(y_pred, y) / accumulation_steps
@@ -812,7 +812,7 @@ class RegressionEngine(Common):
 
                          # Forward pass
                         y_pred = self.get_predictions(self.model(X))
-                        #y_pred = y_pred.clamp(1, 100)
+                        y_pred = y_pred.clamp(0, 1)
                         
                         # Check for NaN/Inf in predictions
                         if torch.isnan(y_pred).any() or torch.isinf(y_pred).any():
