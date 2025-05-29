@@ -22,6 +22,7 @@ The Python code used to apply augmentation is available in [hyperspectral_datalo
 
 <div align="center">
   <img src="images/augmentation.png" alt="Into Picture" width="700"/>
+  <figcaption>Figure 1: Preprocessing stage with augmentation transformation such as gaussian noise and masking.</figcaption>
 </div>
 
 
@@ -33,10 +34,17 @@ Since the task is to predict a disease probability ranging from 1 (minimum) to 1
 
 Several ViT configurations with varying model sizes were tested. The tiny architecture was ultimately selected, as it provides performance comparable to more complex models while significantly reducing inference time and model size.
 
+The ViT-Tiny architecture consists of an embedded patch layer with a patch size of 8×8 pixels and a positional encoder. The input is projected into an embedding space of 256 dimensions and passed through four transformer layers, each comprising an eight-head attention mechanism and a multi-layer perceptron (MLP) with 512 neurons.
+
 <div align="center">
   <img src="images/vit-paper-figure-1-architecture-overview.png" alt="Into Picture" width="900"/>
+  <figcaption>Figure 2: Generic overview of a Vision Transformer (ViT) architecture.</figcaption>
 </div>
 
+<div align="center">
+  <img src="images/ViT-Tiny.png" alt="Into Picture" width="900"/>
+  <figcaption>Figure 3: List of layers in the ViT-Tiny architecture.</figcaption>
+</div>
 
 ## Experimental Setup
 
