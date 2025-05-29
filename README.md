@@ -22,8 +22,10 @@ The Python code used to apply augmentation is available in [hyperspectral_datalo
 
 <div align="center">
   <img src="images/augmentation.png" alt="Into Picture" width="700"/>
-  <figcaption>Figure 1: Preprocessing stage with augmentation transformation such as gaussian noise and masking.</figcaption>
 </div>
+<div align="center">
+  <figcaption>Figure 1: Preprocessing stage with augmentation transformation such as gaussian noise and masking.</figcaption>
+</div>  
 
 
 ## The Proposed Model: ViT-Tiny
@@ -38,13 +40,17 @@ The ViT-Tiny architecture consists of an embedded patch layer with a patch size 
 
 <div align="center">
   <img src="images/vit-paper-figure-1-architecture-overview.png" alt="Into Picture" width="900"/>
-  <figcaption>Figure 2: Generic overview of a Vision Transformer (ViT) architecture.</figcaption>
 </div>
+<div align="center">
+  <figcaption>Figure 2: Generic overview of a Vision Transformer (ViT) architecture.</figcaption>
+</div>  
 
 <div align="center">
-  <img src="images/ViT-Tiny.png" alt="Into Picture" width="900"/>
-  <figcaption>Figure 3: List of layers in the ViT-Tiny architecture.</figcaption>
+  <img src="images/ViT-Tiny.png" alt="Into Picture" width="900"/>  
 </div>
+<div align="center">
+  <figcaption>Figure 3: List of layers in the ViT-Tiny architecture.</figcaption>
+</div>  
 
 ## Experimental Setup
 
